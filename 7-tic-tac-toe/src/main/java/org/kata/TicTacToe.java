@@ -19,6 +19,6 @@ public class TicTacToe {
     }
 
     public void play(Square square) {
-        player = O;
+        player = (player == X) ? O : X;
     }
 }

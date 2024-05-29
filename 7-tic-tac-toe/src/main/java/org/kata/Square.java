@@ -1,5 +1,5 @@
 package org.kata;
 
 public enum Square {
-    TOP_LEFT
+    TOP_MIDDLE, TOP_LEFT
 }
