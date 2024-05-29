@@ -9,4 +9,12 @@ public class TicTacToe {
     public String currentPlayer() {
         return "X";
     }
+
+    public String square(Square square) {
+        return "X";
+    }
+
+    public void play(Square square) {
+
+    }
 }
