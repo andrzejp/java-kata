@@ -2,7 +2,10 @@ package org.kata;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Set;
+
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.kata.Square.TOP_LEFT;
 
 class TicTacToeTest {
 
@@ -19,10 +22,10 @@ class TicTacToeTest {
     void current_player_can_play_on_a_square() {
         TicTacToe ticTacToe = new TicTacToe();
 
-        ticTacToe.play(Square.TOP_LEFT);
+        ticTacToe.play(TOP_LEFT);
 
-        var contents = ticTacToe.square(Square.TOP_LEFT);
-        assertThat(contents)
-                .isEqualTo("X");
+        Set<Square> squares = ticTacToe.takenSquares();
+        assertThat(squares)
+                .contains(TOP_LEFT);
     }
 }
