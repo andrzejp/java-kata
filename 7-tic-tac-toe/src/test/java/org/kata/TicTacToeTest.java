@@ -28,4 +28,15 @@ class TicTacToeTest {
         assertThat(squares)
                 .contains(TOP_LEFT);
     }
+
+    @Test
+    void second_player_is_O() {
+        TicTacToe ticTacToe = new TicTacToe();
+
+        ticTacToe.play(TOP_LEFT);
+
+        Player currentPlayer = ticTacToe.currentPlayer();
+        assertThat(currentPlayer)
+            .isEqualTo(Player.O);
+    }
 }
