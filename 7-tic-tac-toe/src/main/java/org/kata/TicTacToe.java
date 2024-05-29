@@ -2,10 +2,6 @@ package org.kata;
 
 public class TicTacToe {
 
-    public void start() {
-
-    }
-
     public Player currentPlayer() {
         return Player.X;
     }
