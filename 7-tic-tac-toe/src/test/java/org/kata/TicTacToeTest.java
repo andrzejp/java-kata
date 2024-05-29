@@ -10,10 +10,9 @@ class TicTacToeTest {
     void first_player_is_X() {
         TicTacToe ticTacToe = new TicTacToe();
 
-        String currentPlayer = ticTacToe.currentPlayer();
-
+        Player currentPlayer = ticTacToe.currentPlayer();
         assertThat(currentPlayer)
-            .isEqualTo("X");
+                .isEqualTo(Player.X);
     }
 
     @Test
@@ -24,6 +23,6 @@ class TicTacToeTest {
 
         var contents = ticTacToe.square(Square.TOP_LEFT);
         assertThat(contents)
-            .isEqualTo("X");
+                .isEqualTo("X");
     }
 }

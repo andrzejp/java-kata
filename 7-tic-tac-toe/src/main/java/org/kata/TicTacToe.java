@@ -6,8 +6,8 @@ public class TicTacToe {
 
     }
 
-    public String currentPlayer() {
-        return "X";
+    public Player currentPlayer() {
+        return Player.X;
     }
 
     public String square(Square square) {
